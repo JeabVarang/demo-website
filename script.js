@@ -15,7 +15,7 @@ function switchMode(e){
         lightMode();
         imageSwitchMode('light');
     }
-}
+}    
 function darkMode(){
     toggleIcon.children[0].textContent="โหมดกลางคืน";
     toggleIcon.children[1].classList.replace('fa-sun','fa-moon');
@@ -28,5 +28,8 @@ function lightMode(){
 }
 
 function imageSwitchMode(mode){
+    image1.src=`img/undraw_interior_design_${mode}.svg`;
+    image2.src=`img/undraw_designer_${mode}.svg`;
+    image3.src=`img/undraw_freelance_${mode}.svg`;
 }
 switchToggle.addEventListener('change',switchMode);

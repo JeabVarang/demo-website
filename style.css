@@ -10,7 +10,7 @@
     --primary-color:orange;
     --text-color:white;
     --text-color-second:rgba(255,255,255,0.8);
-    --background:#000000;
+    --background:#030303;
 }
 body{
     background-color: var(--background);
